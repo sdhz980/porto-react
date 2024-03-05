@@ -1,0 +1,83 @@
+
+.zoom {
+    transition: transform ,margin;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+  
+.zoom:hover {
+    transform: scale(2);
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+#zoomReact:hover {
+    transform: rotate(360deg) scale(2);
+}
+
+#zoomNext:hover {
+    transform: rotate(360deg) scale(2);
+}
+
+#level {
+    justify-self: center;
+    align-self: center;
+    text-align: justify;
+
+    font-size: 1.2vw;
+
+    transition: opacity .5s,display .15s;
+    opacity: 0;
+
+    width: 70vw;
+
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+
+}
+
+#jsText ,#reactText,#nodeText,#nextText{
+    justify-self: center;
+    align-self: center;
+    text-align: justify;
+
+    font-size: 1.2vw;
+
+    position: absolute;
+    transition: opacity .5s,display .15s;
+    opacity: 0;
+
+    width: 70vw;
+
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.zoom:hover ~ #level {
+    opacity: 1;
+}
+
+
+#zoomList #zoomJs:hover ~ #zoomText #jsText {
+    opacity: 1;
+    display: inline-block;
+}
+
+#zoomList #zoomReact:hover ~ #zoomText #reactText {
+    display: block;
+    opacity: 1;
+}
+
+#zoomList #zoomNode:hover ~ #zoomText #nodeText {
+    display: block;
+    opacity: 1;
+    
+}
+
+#zoomList #zoomNext:hover ~ #zoomText #nextText {
+    display: block;
+    opacity: 1;
+}

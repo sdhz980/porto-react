@@ -3,28 +3,28 @@ import arrow from '../assets/arrow.png'
 const Banner = () => {
   return (
     <>  
-        <div id='containerText' className="pl-[15vw] pr-[15vw] h-[100vh] bg-red-700">
+        <div id='containerText' className="pl-[15vw] pr-[15vw] pt-[20vh] h-[100vh] bg-red-700 flex flex-wrap items-center justify-center">
           
-          <div className="flex flex-wrap gap-8 justify-center pt-[40vh]">
+          <div className="flex flex-wrap gap-[2vw] justify-center">
 
-              <div className="text-white font-Saeda">
-                  <h1 id='hiText' className="text-[62px]">Hi!</h1>
-                  <h1 id='myNameText' className="text-[40px]">My Name is</h1>
+              <div className="text-white font-Monsterrat h-full">
+                  <h1 id='hiText' className="text-[5vw]">Hi!</h1>
+                  <h1 id='myNameText' className="text-[3.5vw]">My Name is</h1>
               </div>
 
-              <div id='nameText' className="font-Saeda mt-[70px] text-[60px]">
-                <h2 >Shadam Husain</h2>
+              <div id='nameText' className="font-Monsterrat h-full mt-[8.2%] content-end">
+                <h2 className='text-[5vw]'>Shadam Husain</h2>
               </div>
 
-                <div className='basis-full w-0'></div>
+                <div className='w-0 bg-white h-[0.4vh] mb-[6vh] basis-[60vw] rounded-full'></div>
                 
-                <div className='text-white font-Saeda text-[40px] mt-[-45px] tracking-[8.5px]'><h1>Im Full Stack Programmer</h1></div>
+                <div className='text-white font-Monsterrat text-[3.8vw] mt-[-45px] tracking-[8.5px] text-center'><h1>Im Full Stack Programmer</h1></div>
 
           </div>
 
-              <div className="pl-[15vw] pr-[15vw] text-center mt-24">
+              <div className="relative pl-[15vw] pr-[15vw] text-center mt-[5%] animate-bounce">
                 <h1>Scroll down for more</h1>
-                <img src={arrow} alt="" className='h-[80px] w-[80px] ml-auto mr-auto mt-12'/>
+                <img src={arrow} alt="" className='h-[5vw] w-[5vw] ml-auto mr-auto mt-[1em] rounded-full'/>
               </div>
 
 

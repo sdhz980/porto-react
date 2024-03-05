@@ -22,16 +22,32 @@
     src: url(./assets/LTSaeada-Regular.otf);
 }
 
-.parallax {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+@font-face {
+    font-family: "Monsterrat";
+    src: url(./assets/Monsterrat.ttf);
 }
 
-.parallax img {
-    position: absolute;
+@font-face {
+    font-family: "MadimiOne";
+    src: url(./assets/MadimiOne.ttf);
 }
 
-.parallax img {
-    width: 100%;
+html {
+    scroll-snap-type: y mandatory;
 }
+
+body {
+    margin: 0;
+}
+
+html,body,section {
+    block-size: 100%;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
